@@ -1,15 +1,135 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-
-
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UCP1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
 </head>
-
 <body>
-
-
-</body>
-
+    <!----------The Top bar---------------->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">Happend In my life 👌</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bstarget="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">What i do?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Who am i?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Contact me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!----------The time phrases---------------->
+    <div class="container-lg custom-bg position-relative rounded-bottom-circle" style="height: 150px; width: 90%;">
+        <div class="col-md-8 ">
+            <div class="row custom-bg">
+                <div class="container-fluid">
+                    <p class="position-absolute top-0 end-0">
+                        <span id="day"></span> <span id="date"></span>
+                    </p>
+                    <br><br>
+                    <span class="position-absolute end-50" style="font-weight: bold;" id="time"></span>
+                </div>
+                <p class="position-absolute top-0 start-0">
+                    <span id="greeting"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!----------The Images---------------->
+    <body>
+        <div class="container" style="width: 100cm; padding: auto;">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="slider-container">
+                        <img class="slider-image" src="image1.jpg" alt="Image 1">
+                        <img class="slider-image hidden" src="M2.jpg" alt="Image 2">
+                        <img class="slider-image hidden" src="M3.jpg" alt="Image 3">
+                        <div class="slider-arrow slider-arrow-left" onclick="previousImage()"></div>
+                        <div class="slider-arrow slider-arrow-right" onclick="nextImage()"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h1 style="text-align: center;">
+                <span
+                    style="color: #663300; background-color: #FFA500; display: inline-block; text-align: center; font-size: 50px; border: 2px solid #663300;">My
+                    trips</span>
+            </h1>
+        </div>
+        <!----------The cards---------------->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card  shadow">
+                        <img src="S1.jpg" class="card-img-top" alt="Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">My life in Saudi &#128331;</h5>
+                            <p class="card-text" style="font-size: 20px;">I moved to Saudi Arabia when my father
+                                relocated for work there.
+                                While studying high school there, my passion for technology flourished. I had access to
+                                a wide range of technologies and fast internet,
+                                which allowed me to easily explore and develop in this field.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card   shadow">
+                        <img src="S22.jpg" class="card-img-top" alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">My life in Turkey <i class="flag flag-tr"></i></h5>
+                            <p class="card-text" style="font-size: 20px;">I embarked on an incredible journey to Turkey,
+                                driven by my burning desire to immerse myself in their language and discover the perfect
+                                university. With unwavering determination, I turned my childhood dream to travel to
+                                turkey into a remarkable reality, and the sheer exhilaration I feel now is absolutely
+                                electrifying!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card  shadow">
+                        <img src="S3.jpg" class="card-img-top rounded-top" alt="Image 3" style="max-width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">My life in Indonesia <i class="flag flag-indonesia"></i>
+                            </h5>
+                            <p class="card-text" style="font-size: 20px;">Receiving the news of my scholarship approval
+                                at UMY filled me with immense joy. It opened doors to studying Information Technology
+                                and discovering new cultures. I embraced a new language and formed lifelong friendships.
+                                Additionally, I connected with nature through camping and mountain hiking in Indonesia,
+                                creating unforgettable experiences. It's a beautiful and joyous chapter of my life!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!----------The Footer---------------->
+        <footer class="footer bg-info text-light text-center">
+            <div class="container">
+                <p class="mb-0 p-f">&copy; 2023 Pengembangan Desain Web - Created by: OSAMAH ALMEKHLAFI</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+        <script src="script.js">
+        </script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+    </body>
 </html>
